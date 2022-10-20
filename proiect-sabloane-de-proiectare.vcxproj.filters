@@ -40,9 +40,6 @@
     <Filter Include="Classes\TableOfContents">
       <UniqueIdentifier>{c204fd2c-b70f-43bf-8050-5ac008d5c615}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\SubChapter">
-      <UniqueIdentifier>{5dad290e-8f3f-4527-a58a-1f0b4ff96470}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -65,9 +62,6 @@
     </ClCompile>
     <ClCompile Include="Paragraph.cpp">
       <Filter>Classes\Paragraph</Filter>
-    </ClCompile>
-    <ClCompile Include="SubChapter.cpp">
-      <Filter>Classes\SubChapter</Filter>
     </ClCompile>
     <ClCompile Include="Table.cpp">
       <Filter>Classes\Table</Filter>
@@ -94,9 +88,6 @@
     </ClInclude>
     <ClInclude Include="Paragraph.hpp">
       <Filter>Classes\Paragraph</Filter>
-    </ClInclude>
-    <ClInclude Include="SubChapter.hpp">
-      <Filter>Classes\SubChapter</Filter>
     </ClInclude>
     <ClInclude Include="Table.hpp">
       <Filter>Classes\Table</Filter>
