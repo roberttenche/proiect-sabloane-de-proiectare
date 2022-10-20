@@ -22,9 +22,6 @@
     <Filter Include="Classes\Book">
       <UniqueIdentifier>{380ca33b-987e-4416-98a4-07630ac9497b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Chapter">
-      <UniqueIdentifier>{8fcfcfab-c2f9-49f5-ad77-dc0479d6b623}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Classes\Element">
       <UniqueIdentifier>{0692650a-00ff-4484-84a5-78c5e51b3efe}</UniqueIdentifier>
     </Filter>
@@ -51,9 +48,6 @@
     <ClCompile Include="Book.cpp">
       <Filter>Classes\Book</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter.cpp">
-      <Filter>Classes\Chapter</Filter>
-    </ClCompile>
     <ClCompile Include="Element.cpp">
       <Filter>Classes\Element</Filter>
     </ClCompile>
@@ -76,9 +70,6 @@
     </ClInclude>
     <ClInclude Include="Book.hpp">
       <Filter>Classes\Book</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter.hpp">
-      <Filter>Classes\Chapter</Filter>
     </ClInclude>
     <ClInclude Include="Element.hpp">
       <Filter>Classes\Element</Filter>
