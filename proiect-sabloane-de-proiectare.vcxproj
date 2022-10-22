@@ -25,6 +25,7 @@
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Paragraph.cpp" />
+    <ClCompile Include="Section.cpp" />
     <ClCompile Include="Table.cpp" />
     <ClCompile Include="TableOfContents.cpp" />
   </ItemGroup>
@@ -34,6 +35,7 @@
     <ClInclude Include="Element.hpp" />
     <ClInclude Include="Image.hpp" />
     <ClInclude Include="Paragraph.hpp" />
+    <ClInclude Include="Section.hpp" />
     <ClInclude Include="Table.hpp" />
     <ClInclude Include="TableOfContents.hpp" />
   </ItemGroup>

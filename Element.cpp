@@ -2,17 +2,19 @@
 
 #include "Paragraph.hpp"
 
-Element::Element()
+void Element::add(const Element& element)
 {
+  throw "Not implemented.";
 }
 
-Element::~Element()
+void Element::remove(const Element& element)
 {
+  throw "Not implemented.";
 }
 
-ElementType Element::type()
+Element& Element::get(size_t index_element)
 {
-  return ElementType::BaseElement;
+  throw "Not implemented.";
 }
 
 void Element::write(std::ostream& out)

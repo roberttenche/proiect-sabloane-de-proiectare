@@ -3,24 +3,20 @@
 #include <iostream>
 #include <string>
 
-enum class ElementType
-{
-  BaseElement,
-  Image,
-  Paragraph,
-  Table
-};
-
 class Element
 {
 public:
-  Element();
-  virtual ~Element();
+  Element() {}
+  virtual ~Element() {}
+
+  virtual void add(const Element& element) = 0;
+  virtual void remove(const Element& element) = 0;
+  virtual Element& get(size_t index_element) = 0;
+
+  /// Needed for printing
+  virtual void write(std::ostream& out) = 0;
   friend std::ostream& operator<<(std::ostream& out, Element& element);
-  virtual void write(std::ostream& out);
-  
 
 protected:
-  virtual ElementType type();
   
 };

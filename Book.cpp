@@ -1,17 +1,12 @@
 #include "Book.hpp"
 
 #include "Author.hpp"
-#include "Chapter.hpp"
 
-#include <iostream>
+#include <vector>
 
 Book::Book(std::string title)
 {
   this->title = title;
-}
-
-Book::~Book()
-{
 }
 
 void Book::add_author(const Author& author)
@@ -19,24 +14,28 @@ void Book::add_author(const Author& author)
   this->author = &author;
 }
 
-size_t Book::create_chapter(std::string name)
+void Book::add(const Element& element)
 {
-  this->chapters.push_back(Chapter(name));
-  return (this->chapters.size() - 1);
+
+  this->children.push_back(&element);
 }
 
-Chapter& Book::get_chapter(size_t index_chapter)
+void Book::remove(const Element& element)
 {
-  return this->chapters[index_chapter];
+  throw "Not implemented.";
 }
 
-std::ostream& operator<<(std::ostream& out, const Book& book)
+Element& Book::get(size_t index_element)
 {
-  out << "Book: " << book.title << std::endl
-      << *book.author << std::endl;
+  throw "Not implemented.";
+}
 
-  for (auto chapter : book.chapters)
-    out << chapter << std::endl;
-
-  return out;
+void Book::write(std::ostream& out)
+{
+  out << "Book: " << this->title << std::endl 
+      << *this->author << std::endl;
+  for (auto child : this->children)
+  {
+    out << *((Element*)child) << std::endl;
+  }
 }

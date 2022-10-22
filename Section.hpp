@@ -2,14 +2,15 @@
 
 #include "Element.hpp"
 
-#include <iostream>
 #include <string>
+#include <vector>
 
-class Image : public Element
+class Section : public Element
 {
 public:
-  Image(std::string description);
-  virtual ~Image() {}
+  Section() {}
+  Section(std::string title);
+  virtual ~Section() {}
 
   void add(const Element& element);
   void remove(const Element& element);
@@ -17,6 +18,8 @@ public:
 
   void write(std::ostream& out);
 
-private:
-  std::string description;
+protected:
+  std::string title;
+  std::vector<const Element*> children;
 };
+

@@ -37,6 +37,9 @@
     <Filter Include="Classes\TableOfContents">
       <UniqueIdentifier>{c204fd2c-b70f-43bf-8050-5ac008d5c615}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Section">
+      <UniqueIdentifier>{f48a4966-792c-4c8c-86b6-576a237e2018}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -63,6 +66,9 @@
     <ClCompile Include="TableOfContents.cpp">
       <Filter>Classes\TableOfContents</Filter>
     </ClCompile>
+    <ClCompile Include="Section.cpp">
+      <Filter>Classes\Section</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Author.hpp">
@@ -85,6 +91,9 @@
     </ClInclude>
     <ClInclude Include="TableOfContents.hpp">
       <Filter>Classes\TableOfContents</Filter>
+    </ClInclude>
+    <ClInclude Include="Section.hpp">
+      <Filter>Classes\Section</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

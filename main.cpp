@@ -1,33 +1,38 @@
 #include "Author.hpp"
 #include "Book.hpp"
-#include "SubChapter.hpp"
+#include "Paragraph.hpp"
 
 #include <iostream>
 
 int main(int argc, char* argv[])
 {
 
-  Book disco_titanic("Disco Titanic");
+  Book noapte_buna("Noapte buna, copii!");
 
   Author rp_gheo("Radu Pavel Gheo");
 
-  disco_titanic.add_author(rp_gheo);
+  noapte_buna.add_author(rp_gheo);
 
-  size_t index_chapter_one = disco_titanic.create_chapter("Capitolul 1");
-  Chapter& chp1 = disco_titanic.get_chapter(index_chapter_one);
-  size_t index_sub_chapter_one_one = chp1.createSubChapter("Subcapitolul 1.1");
-  SubChapter& sc_one_one = chp1.get_sub_chapter(index_sub_chapter_one_one);
+  Section cap1("Capitolul 1");
+  Section cap11("Capitolul 1.1");
+  Section cap111("Capitolul 1.1.1");
+  Section cap1111("Capitolul 1.1.1.1");
 
-  sc_one_one.create_new_paragraph("Paragraph1");
+  noapte_buna.add(*(new Paragraph("Multumesc celor care...")));
+  noapte_buna.add(cap1);
 
-  sc_one_one.create_new_paragraph("Paragraph2");
-  sc_one_one.create_new_paragraph("Paragraph3");
-  sc_one_one.create_new_image("Image1");
-  sc_one_one.create_new_paragraph("Paragraph4");
-  sc_one_one.create_new_table("Table1");
-  sc_one_one.create_new_paragraph("Paragraph5");
+  cap1.add(*(new Paragraph("Moto capitol")));
+  cap1.add(cap11);
 
-  std::cout << disco_titanic << std::endl;
+  cap11.add(*(new Paragraph("Text from subchapter 1.1")));
+  cap11.add(cap111);
+
+  cap111.add(*(new Paragraph("Text from subchapter 1.1.1")));
+  cap111.add(cap1111);
+
+  cap1111.add(*(new Paragraph("Text from subchapter 1.1.1.1")));
+
+  std::cout << noapte_buna << std::endl;
 
   return 0;
 }

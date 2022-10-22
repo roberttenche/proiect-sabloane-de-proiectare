@@ -5,16 +5,22 @@ Paragraph::Paragraph(std::string text)
   this->text = text;
 }
 
-Paragraph::~Paragraph()
+void Paragraph::add(const Element& element)
 {
+  throw "Not Allowed!";
+}
+
+void Paragraph::remove(const Element& element)
+{
+  throw "Not Allowed!";
+}
+
+Element& Paragraph::get(size_t index_element)
+{
+  throw "Not Allowed!";
 }
 
 void Paragraph::write(std::ostream& out)
 {
   out << "Paragraph: " << this->text;
-}
-
-ElementType Paragraph::type()
-{
-  return ElementType::Paragraph;
 }
