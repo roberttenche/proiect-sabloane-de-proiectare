@@ -2,15 +2,13 @@
 
 #include "Element.hpp"
 #include "Picture.hpp"
+#include "Image.hpp"
 
-#include <iostream>
-#include <string>
-
-class Image : public Element, public Picture
+class ImageProxy : public Element, public Picture
 {
 public:
-  Image(std::string description);
-  virtual ~Image() {}
+  ImageProxy(std::string description);
+  virtual ~ImageProxy();
 
   void add(const Element& element);
   void remove(const Element& element);
@@ -24,4 +22,6 @@ public:
 
 private:
   std::string description;
+  Image* img;
 };
+

@@ -23,8 +23,10 @@
     <ClCompile Include="Book.cpp" />
     <ClCompile Include="Element.cpp" />
     <ClCompile Include="Image.cpp" />
+    <ClCompile Include="ImageProxy.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Paragraph.cpp" />
+    <ClCompile Include="Picture.cpp" />
     <ClCompile Include="Section.cpp" />
     <ClCompile Include="Table.cpp" />
     <ClCompile Include="TableOfContents.cpp" />
@@ -34,7 +36,9 @@
     <ClInclude Include="Book.hpp" />
     <ClInclude Include="Element.hpp" />
     <ClInclude Include="Image.hpp" />
+    <ClInclude Include="ImageProxy.hpp" />
     <ClInclude Include="Paragraph.hpp" />
+    <ClInclude Include="Picture.hpp" />
     <ClInclude Include="Section.hpp" />
     <ClInclude Include="Table.hpp" />
     <ClInclude Include="TableOfContents.hpp" />
@@ -121,10 +125,13 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

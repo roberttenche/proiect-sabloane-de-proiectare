@@ -40,6 +40,12 @@
     <Filter Include="Classes\Section">
       <UniqueIdentifier>{f48a4966-792c-4c8c-86b6-576a237e2018}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\ImageProxy">
+      <UniqueIdentifier>{1da13c63-ad07-4a96-94d0-cd964f3d4f6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Picture">
+      <UniqueIdentifier>{81f09ba8-f1a9-4c95-8963-ae1d5bd49ebe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -69,6 +75,12 @@
     <ClCompile Include="Section.cpp">
       <Filter>Classes\Section</Filter>
     </ClCompile>
+    <ClCompile Include="ImageProxy.cpp">
+      <Filter>Classes\ImageProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="Picture.cpp">
+      <Filter>Classes\Picture</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Author.hpp">
@@ -94,6 +106,12 @@
     </ClInclude>
     <ClInclude Include="Section.hpp">
       <Filter>Classes\Section</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageProxy.hpp">
+      <Filter>Classes\ImageProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="Picture.hpp">
+      <Filter>Classes\Picture</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

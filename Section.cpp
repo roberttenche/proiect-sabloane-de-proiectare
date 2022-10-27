@@ -10,12 +10,12 @@ void Section::add(const Element& element)
   this->children.push_back(&element);
 }
 
-void Section::remove(const Element& element)
+void Section::remove(const Element&)
 {
   throw "Not Implemented!";
 }
 
-Element& Section::get(size_t index_element)
+Element& Section::get(size_t)
 {
   throw "Not Implemented!";
 }
@@ -23,8 +23,10 @@ Element& Section::get(size_t index_element)
 void Section::write(std::ostream& out)
 {
   out << "Section: " << this->title << std::endl;
-  for (auto child : this->children)
+  for (auto child = this->children.begin(); child != this->children.end(); child++)
   {
-    out << *((Element*)child) << std::endl;
+    out << *((Element*)(*child));
+    // last element does not add std::endl to std::ostream
+    if (child != this->children.end() - 1) out << std::endl;
   }
 }

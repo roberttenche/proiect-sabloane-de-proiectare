@@ -9,9 +9,9 @@ Book::Book(std::string title)
   this->title = title;
 }
 
-void Book::add_author(const Author& author)
+void Book::add_author(const Author& auth)
 {
-  this->author = &author;
+  this->author = &auth;
 }
 
 void Book::add(const Element& element)

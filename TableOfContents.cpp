@@ -1,14 +1,14 @@
 #include "TableOfContents.hpp"
 
-void TableOfContents::add(const Element& element)
+void TableOfContents::add(const Element&)
 {
   throw "Not Allowed!";
 }
-void TableOfContents::remove(const Element& element)
+void TableOfContents::remove(const Element&)
 {
   throw "Not Allowed!";
 }
-Element& TableOfContents::get(size_t index_element)
+Element& TableOfContents::get(size_t)
 {
   throw "Not Allowed!";
 }

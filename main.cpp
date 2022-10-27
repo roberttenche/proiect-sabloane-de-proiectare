@@ -1,38 +1,52 @@
 #include "Author.hpp"
 #include "Book.hpp"
 #include "Paragraph.hpp"
+#include "ImageProxy.hpp"
 
 #include <iostream>
+#include <chrono>
 
-int main(int argc, char* argv[])
+int main()
 {
+  std::chrono::steady_clock::time_point timer_start;
+  std::chrono::steady_clock::time_point timer_end;
+  double duration = 0.0L;
 
-  Book noapte_buna("Noapte buna, copii!");
+  // start timer
+  timer_start = std::chrono::high_resolution_clock::now();
 
-  Author rp_gheo("Radu Pavel Gheo");
+  ImageProxy img1("Pamela Anderson");
+  ImageProxy img2("Kim Kardashin");
+  ImageProxy img3("Kirby Griffin");
 
-  noapte_buna.add_author(rp_gheo);
+  Section playboyS1("Front Cover");
+  playboyS1.add(img1);
 
-  Section cap1("Capitolul 1");
-  Section cap11("Capitolul 1.1");
-  Section cap111("Capitolul 1.1.1");
-  Section cap1111("Capitolul 1.1.1.1");
+  Section playboyS2("Summer Girls");
+  playboyS2.add(img2);
+  playboyS2.add(img3);
 
-  noapte_buna.add(*(new Paragraph("Multumesc celor care...")));
-  noapte_buna.add(cap1);
+  Book playboy("Playboy");
+  playboy.add(playboyS1);
+  playboy.add(playboyS2);
 
-  cap1.add(*(new Paragraph("Moto capitol")));
-  cap1.add(cap11);
+  timer_end = std::chrono::high_resolution_clock::now();
 
-  cap11.add(*(new Paragraph("Text from subchapter 1.1")));
-  cap11.add(cap111);
+  duration = (double)std::chrono::duration_cast<std::chrono::milliseconds>(timer_end - timer_start).count();
 
-  cap111.add(*(new Paragraph("Text from subchapter 1.1.1")));
-  cap111.add(cap1111);
+  std::cout << "Creation of the content took " << duration << " miliseconds" << std::endl << std::endl;
 
-  cap1111.add(*(new Paragraph("Text from subchapter 1.1.1.1")));
+  timer_start = std::chrono::high_resolution_clock::now();
+  std::cout << playboyS1 << std::endl;
+  timer_end = std::chrono::high_resolution_clock::now();
+  duration = (double)std::chrono::duration_cast<std::chrono::milliseconds>(timer_end - timer_start).count();
+  std::cout << "Printing of the section 1 took " << duration << " miliseconds" << std::endl << std::endl;
 
-  std::cout << noapte_buna << std::endl;
+  timer_start = std::chrono::high_resolution_clock::now();
+  std::cout << playboyS2 << std::endl;
+  timer_end = std::chrono::high_resolution_clock::now();
+  duration = (double)std::chrono::duration_cast<std::chrono::milliseconds>(timer_end - timer_start).count();
+  std::cout << "Printing of the section 2 took " << duration << " miliseconds" << std::endl << std::endl;
 
   return 0;
 }

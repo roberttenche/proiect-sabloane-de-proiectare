@@ -5,7 +5,7 @@
 class TableOfContents : public Element
 {
 public:
-  TableOfContents() {}
+  //TableOfContents() {}
   virtual ~TableOfContents() {}
 
   void add(const Element& element);

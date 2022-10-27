@@ -5,17 +5,17 @@ Table::Table(std::string name)
   this->name = name;
 }
 
-void Table::add(const Element& element)
+void Table::add(const Element&)
 {
   throw "Not Allowed!";
 }
 
-void Table::remove(const Element& element)
+void Table::remove(const Element&)
 {
   throw "Not Allowed!";
 }
 
-Element& Table::get(size_t index_element)
+Element& Table::get(size_t)
 {
   throw "Not Allowed!";
 }

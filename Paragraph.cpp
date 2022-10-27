@@ -5,17 +5,17 @@ Paragraph::Paragraph(std::string text)
   this->text = text;
 }
 
-void Paragraph::add(const Element& element)
+void Paragraph::add(const Element&)
 {
   throw "Not Allowed!";
 }
 
-void Paragraph::remove(const Element& element)
+void Paragraph::remove(const Element&)
 {
   throw "Not Allowed!";
 }
 
-Element& Paragraph::get(size_t index_element)
+Element& Paragraph::get(size_t)
 {
   throw "Not Allowed!";
 }
