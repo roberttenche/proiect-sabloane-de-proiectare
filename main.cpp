@@ -2,6 +2,8 @@
 #include "Book.hpp"
 #include "Paragraph.hpp"
 #include "ImageProxy.hpp"
+#include "AlignLeft.hpp"
+#include "AlignRight.hpp"
 
 #include <iostream>
 #include <chrono>
@@ -26,7 +28,12 @@ int main()
   playboyS2.add(img2);
   playboyS2.add(img3);
 
+  Paragraph preface("Hello naughty :)");
+  AlignRight left_alignment;
+  preface.set_alignment(left_alignment);
+
   Book playboy("Playboy");
+  playboy.add(preface);
   playboy.add(playboyS1);
   playboy.add(playboyS2);
 
@@ -47,6 +54,8 @@ int main()
   timer_end = std::chrono::high_resolution_clock::now();
   duration = (double)std::chrono::duration_cast<std::chrono::milliseconds>(timer_end - timer_start).count();
   std::cout << "Printing of the section 2 took " << duration << " miliseconds" << std::endl << std::endl;
+
+  std::cout << playboy << std::endl;
 
   return 0;
 }

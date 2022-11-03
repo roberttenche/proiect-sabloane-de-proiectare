@@ -32,8 +32,11 @@ Element& Book::get(size_t index_element)
 
 void Book::write(std::ostream& out)
 {
-  out << "Book: " << this->title << std::endl 
-      << *this->author << std::endl;
+  out << "Book: " << this->title << std::endl;
+  
+  if (this->author != nullptr) out << *this->author << std::endl;
+  else out << "Author: null" << std::endl;
+
   for (auto child : this->children)
   {
     out << *((Element*)child) << std::endl;

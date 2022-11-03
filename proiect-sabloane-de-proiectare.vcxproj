@@ -19,6 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AlignLeft.cpp" />
+    <ClCompile Include="AlignRight.cpp" />
+    <ClCompile Include="AlignStrategy.cpp" />
     <ClCompile Include="Author.cpp" />
     <ClCompile Include="Book.cpp" />
     <ClCompile Include="Element.cpp" />
@@ -32,6 +35,9 @@
     <ClCompile Include="TableOfContents.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AlignLeft.hpp" />
+    <ClInclude Include="AlignRight.hpp" />
+    <ClInclude Include="AlignStrategy.hpp" />
     <ClInclude Include="Author.hpp" />
     <ClInclude Include="Book.hpp" />
     <ClInclude Include="Element.hpp" />

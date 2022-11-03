@@ -22,29 +22,44 @@
     <Filter Include="Classes\Book">
       <UniqueIdentifier>{380ca33b-987e-4416-98a4-07630ac9497b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Element">
-      <UniqueIdentifier>{0692650a-00ff-4484-84a5-78c5e51b3efe}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Classes\Image">
+    <Filter Include="Classes\Book\Image">
       <UniqueIdentifier>{8e1610e3-2ec7-4ed9-8540-b0e3a6685936}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Paragraph">
-      <UniqueIdentifier>{bf4b0eb2-3882-4b42-ad19-5f3f45bb5272}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Classes\Table">
-      <UniqueIdentifier>{0a0e7872-bff3-4cac-853b-718b46d64b8d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Classes\TableOfContents">
-      <UniqueIdentifier>{c204fd2c-b70f-43bf-8050-5ac008d5c615}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Classes\Section">
-      <UniqueIdentifier>{f48a4966-792c-4c8c-86b6-576a237e2018}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Classes\ImageProxy">
+    <Filter Include="Classes\Book\ImageProxy">
       <UniqueIdentifier>{1da13c63-ad07-4a96-94d0-cd964f3d4f6d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Picture">
+    <Filter Include="Classes\Book\Paragraph">
+      <UniqueIdentifier>{bf4b0eb2-3882-4b42-ad19-5f3f45bb5272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Interfaces">
+      <UniqueIdentifier>{2f187df0-fc18-4ed7-b776-69a97fb81eed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Interfaces\Element">
+      <UniqueIdentifier>{0692650a-00ff-4484-84a5-78c5e51b3efe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Interfaces\AlignStrategy">
+      <UniqueIdentifier>{217dc517-465a-4daf-ad58-57802e089664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Book\Picture">
       <UniqueIdentifier>{81f09ba8-f1a9-4c95-8963-ae1d5bd49ebe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Book\Section">
+      <UniqueIdentifier>{f48a4966-792c-4c8c-86b6-576a237e2018}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Book\Table">
+      <UniqueIdentifier>{0a0e7872-bff3-4cac-853b-718b46d64b8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Book\TableOfContents">
+      <UniqueIdentifier>{c204fd2c-b70f-43bf-8050-5ac008d5c615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Alignments">
+      <UniqueIdentifier>{37b4ce4a-f2f3-4c1d-9a52-a56a2c217116}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Alignments\AlignLeft">
+      <UniqueIdentifier>{f4a7a8af-5137-4f8a-8009-20181bdb79a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Alignments\AlignRight">
+      <UniqueIdentifier>{dc1df664-d3d3-49d0-bb81-b32be3737359}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -58,28 +73,37 @@
       <Filter>Classes\Book</Filter>
     </ClCompile>
     <ClCompile Include="Element.cpp">
-      <Filter>Classes\Element</Filter>
+      <Filter>Classes\Interfaces\Element</Filter>
     </ClCompile>
     <ClCompile Include="Image.cpp">
-      <Filter>Classes\Image</Filter>
+      <Filter>Classes\Book\Image</Filter>
     </ClCompile>
     <ClCompile Include="Paragraph.cpp">
-      <Filter>Classes\Paragraph</Filter>
+      <Filter>Classes\Book\Paragraph</Filter>
     </ClCompile>
     <ClCompile Include="Table.cpp">
-      <Filter>Classes\Table</Filter>
+      <Filter>Classes\Book\Table</Filter>
     </ClCompile>
     <ClCompile Include="TableOfContents.cpp">
-      <Filter>Classes\TableOfContents</Filter>
+      <Filter>Classes\Book\TableOfContents</Filter>
     </ClCompile>
     <ClCompile Include="Section.cpp">
-      <Filter>Classes\Section</Filter>
+      <Filter>Classes\Book\Section</Filter>
     </ClCompile>
     <ClCompile Include="ImageProxy.cpp">
-      <Filter>Classes\ImageProxy</Filter>
+      <Filter>Classes\Book\ImageProxy</Filter>
     </ClCompile>
     <ClCompile Include="Picture.cpp">
-      <Filter>Classes\Picture</Filter>
+      <Filter>Classes\Book\Picture</Filter>
+    </ClCompile>
+    <ClCompile Include="AlignStrategy.cpp">
+      <Filter>Classes\Interfaces\AlignStrategy</Filter>
+    </ClCompile>
+    <ClCompile Include="AlignLeft.cpp">
+      <Filter>Classes\Alignments\AlignLeft</Filter>
+    </ClCompile>
+    <ClCompile Include="AlignRight.cpp">
+      <Filter>Classes\Alignments\AlignRight</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -90,28 +114,37 @@
       <Filter>Classes\Book</Filter>
     </ClInclude>
     <ClInclude Include="Element.hpp">
-      <Filter>Classes\Element</Filter>
+      <Filter>Classes\Interfaces\Element</Filter>
     </ClInclude>
     <ClInclude Include="Image.hpp">
-      <Filter>Classes\Image</Filter>
+      <Filter>Classes\Book\Image</Filter>
     </ClInclude>
     <ClInclude Include="Paragraph.hpp">
-      <Filter>Classes\Paragraph</Filter>
+      <Filter>Classes\Book\Paragraph</Filter>
     </ClInclude>
     <ClInclude Include="Table.hpp">
-      <Filter>Classes\Table</Filter>
+      <Filter>Classes\Book\Table</Filter>
     </ClInclude>
     <ClInclude Include="TableOfContents.hpp">
-      <Filter>Classes\TableOfContents</Filter>
+      <Filter>Classes\Book\TableOfContents</Filter>
     </ClInclude>
     <ClInclude Include="Section.hpp">
-      <Filter>Classes\Section</Filter>
+      <Filter>Classes\Book\Section</Filter>
     </ClInclude>
     <ClInclude Include="ImageProxy.hpp">
-      <Filter>Classes\ImageProxy</Filter>
+      <Filter>Classes\Book\ImageProxy</Filter>
     </ClInclude>
     <ClInclude Include="Picture.hpp">
-      <Filter>Classes\Picture</Filter>
+      <Filter>Classes\Book\Picture</Filter>
+    </ClInclude>
+    <ClInclude Include="AlignStrategy.hpp">
+      <Filter>Classes\Interfaces\AlignStrategy</Filter>
+    </ClInclude>
+    <ClInclude Include="AlignLeft.hpp">
+      <Filter>Classes\Alignments\AlignLeft</Filter>
+    </ClInclude>
+    <ClInclude Include="AlignRight.hpp">
+      <Filter>Classes\Alignments\AlignRight</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

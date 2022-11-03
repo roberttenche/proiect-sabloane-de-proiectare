@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Element.hpp"
+#include "AlignStrategy.hpp"
 
 #include <iostream>
 
@@ -14,9 +15,12 @@ public:
   void remove(const Element& element);
   Element& get(size_t index_element);
 
+  void set_alignment(const AlignStrategy& alignment);
+
   void write(std::ostream& out);
 
 private:
   std::string text;
+  std::string alignment; // temporary
   
 };
