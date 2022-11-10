@@ -10,52 +10,20 @@
 
 int main()
 {
-  std::chrono::steady_clock::time_point timer_start;
-  std::chrono::steady_clock::time_point timer_end;
-  double duration = 0.0L;
 
-  // start timer
-  timer_start = std::chrono::high_resolution_clock::now();
+  Section cap1("Capitol 1");
+  Paragraph p1("Paragraf 1");
+  Paragraph p2("Paragraf 2");
+  Paragraph p3("Paragraf 3");
+  Paragraph p4("Paragraf 4");
+  cap1.add(p1);
+  cap1.add(p2);
+  cap1.add(p3);
+  cap1.add(p4);
 
-  ImageProxy img1("Pamela Anderson");
-  ImageProxy img2("Kim Kardashin");
-  ImageProxy img3("Kirby Griffin");
+  p1.set_alignment(*new AlignLeft());
 
-  Section playboyS1("Front Cover");
-  playboyS1.add(img1);
-
-  Section playboyS2("Summer Girls");
-  playboyS2.add(img2);
-  playboyS2.add(img3);
-
-  Paragraph preface("Hello naughty :)");
-  AlignRight left_alignment;
-  preface.set_alignment(left_alignment);
-
-  Book playboy("Playboy");
-  playboy.add(preface);
-  playboy.add(playboyS1);
-  playboy.add(playboyS2);
-
-  timer_end = std::chrono::high_resolution_clock::now();
-
-  duration = (double)std::chrono::duration_cast<std::chrono::milliseconds>(timer_end - timer_start).count();
-
-  std::cout << "Creation of the content took " << duration << " miliseconds" << std::endl << std::endl;
-
-  timer_start = std::chrono::high_resolution_clock::now();
-  std::cout << playboyS1 << std::endl;
-  timer_end = std::chrono::high_resolution_clock::now();
-  duration = (double)std::chrono::duration_cast<std::chrono::milliseconds>(timer_end - timer_start).count();
-  std::cout << "Printing of the section 1 took " << duration << " miliseconds" << std::endl << std::endl;
-
-  timer_start = std::chrono::high_resolution_clock::now();
-  std::cout << playboyS2 << std::endl;
-  timer_end = std::chrono::high_resolution_clock::now();
-  duration = (double)std::chrono::duration_cast<std::chrono::milliseconds>(timer_end - timer_start).count();
-  std::cout << "Printing of the section 2 took " << duration << " miliseconds" << std::endl << std::endl;
-
-  std::cout << playboy << std::endl;
+  std::cout << cap1 << std::endl;
 
   return 0;
 }

@@ -21,6 +21,6 @@ public:
 
 private:
   std::string text;
-  std::string alignment; // temporary
+  std::string alignment = "None"; // temporary
   
 };

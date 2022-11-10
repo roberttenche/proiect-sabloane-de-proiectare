@@ -61,6 +61,18 @@
     <Filter Include="Classes\Alignments\AlignRight">
       <UniqueIdentifier>{dc1df664-d3d3-49d0-bb81-b32be3737359}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Interfaces\ImageLoader">
+      <UniqueIdentifier>{0ec00950-056b-4858-bd5f-b71028255328}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Interfaces\ImageLoader\BMP_ImageLoader">
+      <UniqueIdentifier>{32e2d5ea-0162-4c78-a8bc-3ce72fb63311}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Interfaces\ImageLoader\JPG_ImageLoader">
+      <UniqueIdentifier>{4221837b-d5f6-4cd1-9d25-f2f7d0496686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Interfaces\ImageLoader\ImageLoaderFactory">
+      <UniqueIdentifier>{fee4fc60-9bbe-4b27-8c9c-881d46eb46ea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -105,6 +117,18 @@
     <ClCompile Include="AlignRight.cpp">
       <Filter>Classes\Alignments\AlignRight</Filter>
     </ClCompile>
+    <ClCompile Include="ImageLoader.cpp">
+      <Filter>Classes\Interfaces\ImageLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="BMP_ImageLoader.cpp">
+      <Filter>Classes\Interfaces\ImageLoader\BMP_ImageLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="JPG_ImageLoader.cpp">
+      <Filter>Classes\Interfaces\ImageLoader\JPG_ImageLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageLoaderFactory.cpp">
+      <Filter>Classes\Interfaces\ImageLoader\ImageLoaderFactory</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Author.hpp">
@@ -145,6 +169,18 @@
     </ClInclude>
     <ClInclude Include="AlignRight.hpp">
       <Filter>Classes\Alignments\AlignRight</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageLoader.hpp">
+      <Filter>Classes\Interfaces\ImageLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="BMP_ImageLoader.hpp">
+      <Filter>Classes\Interfaces\ImageLoader\BMP_ImageLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="JPG_ImageLoader.hpp">
+      <Filter>Classes\Interfaces\ImageLoader\JPG_ImageLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageLoaderFactory.hpp">
+      <Filter>Classes\Interfaces\ImageLoader\ImageLoaderFactory</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
