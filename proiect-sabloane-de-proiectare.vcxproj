@@ -37,6 +37,7 @@
     <ClCompile Include="Section.cpp" />
     <ClCompile Include="Table.cpp" />
     <ClCompile Include="TableOfContents.cpp" />
+    <ClCompile Include="Visitor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AlignLeft.hpp" />
@@ -56,6 +57,7 @@
     <ClInclude Include="Section.hpp" />
     <ClInclude Include="Table.hpp" />
     <ClInclude Include="TableOfContents.hpp" />
+    <ClInclude Include="Visitor.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

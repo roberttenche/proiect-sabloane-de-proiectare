@@ -5,73 +5,65 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Models">
+      <UniqueIdentifier>{f16080e5-2c7e-4e38-974d-369bc5fae3e2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Services">
+      <UniqueIdentifier>{68a7ae6b-59d4-429d-82e5-93b30dc583a9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes">
-      <UniqueIdentifier>{b15a0f45-5247-4354-9018-4576604f08cf}</UniqueIdentifier>
+    <Filter Include="Models\Author">
+      <UniqueIdentifier>{281e305c-1acf-4101-b12d-b825af9ccaec}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Author">
-      <UniqueIdentifier>{c5b31633-3218-45fb-87d2-eee5f2444e7b}</UniqueIdentifier>
+    <Filter Include="Models\Book">
+      <UniqueIdentifier>{b9667c36-6095-4640-ac8d-8ad90d7e0bb4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Book">
-      <UniqueIdentifier>{380ca33b-987e-4416-98a4-07630ac9497b}</UniqueIdentifier>
+    <Filter Include="Models\Element">
+      <UniqueIdentifier>{bb90bfee-e4e5-49aa-a177-629667b3245d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Book\Image">
-      <UniqueIdentifier>{8e1610e3-2ec7-4ed9-8540-b0e3a6685936}</UniqueIdentifier>
+    <Filter Include="Models\Image">
+      <UniqueIdentifier>{f3d8bfc5-b291-4f6d-9dec-4f17c73ba280}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Book\ImageProxy">
-      <UniqueIdentifier>{1da13c63-ad07-4a96-94d0-cd964f3d4f6d}</UniqueIdentifier>
+    <Filter Include="Models\ImageProxy">
+      <UniqueIdentifier>{441e1c79-92f9-44d4-b898-7aab55ddee1b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Book\Paragraph">
-      <UniqueIdentifier>{bf4b0eb2-3882-4b42-ad19-5f3f45bb5272}</UniqueIdentifier>
+    <Filter Include="Models\Paragraph">
+      <UniqueIdentifier>{7ea34767-c91a-4990-9313-336c763d46ad}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Interfaces">
-      <UniqueIdentifier>{2f187df0-fc18-4ed7-b776-69a97fb81eed}</UniqueIdentifier>
+    <Filter Include="Models\Picture">
+      <UniqueIdentifier>{90ee9803-87cd-4d0d-85d7-2e95f61990fe}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Interfaces\Element">
-      <UniqueIdentifier>{0692650a-00ff-4484-84a5-78c5e51b3efe}</UniqueIdentifier>
+    <Filter Include="Models\Section">
+      <UniqueIdentifier>{be5e848d-9815-44bd-b2ef-ad095d9a6424}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Interfaces\AlignStrategy">
-      <UniqueIdentifier>{217dc517-465a-4daf-ad58-57802e089664}</UniqueIdentifier>
+    <Filter Include="Models\Table">
+      <UniqueIdentifier>{641c8106-38b2-4cc8-b051-24be180a8e22}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Book\Picture">
-      <UniqueIdentifier>{81f09ba8-f1a9-4c95-8963-ae1d5bd49ebe}</UniqueIdentifier>
+    <Filter Include="Models\TableOfContents">
+      <UniqueIdentifier>{8cfa0b3c-a21f-4c19-9437-f20b1e561382}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Book\Section">
-      <UniqueIdentifier>{f48a4966-792c-4c8c-86b6-576a237e2018}</UniqueIdentifier>
+    <Filter Include="Services\AlignLeft">
+      <UniqueIdentifier>{ca1dfcf9-7ad4-4ff3-b052-a76ff56abf64}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Book\Table">
-      <UniqueIdentifier>{0a0e7872-bff3-4cac-853b-718b46d64b8d}</UniqueIdentifier>
+    <Filter Include="Services\AlignRight">
+      <UniqueIdentifier>{98b252ca-db2d-4aef-a222-7278204e862b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Book\TableOfContents">
-      <UniqueIdentifier>{c204fd2c-b70f-43bf-8050-5ac008d5c615}</UniqueIdentifier>
+    <Filter Include="Services\AlignStrategy">
+      <UniqueIdentifier>{e1b6dfea-a183-42c2-967a-ae3c1a5b8933}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Alignments">
-      <UniqueIdentifier>{37b4ce4a-f2f3-4c1d-9a52-a56a2c217116}</UniqueIdentifier>
+    <Filter Include="Services\ImageLoader">
+      <UniqueIdentifier>{4a41ad90-2db4-4948-927a-ab72e2c99abb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Alignments\AlignLeft">
-      <UniqueIdentifier>{f4a7a8af-5137-4f8a-8009-20181bdb79a8}</UniqueIdentifier>
+    <Filter Include="Services\ImageLoader\ImageLoaderFactory">
+      <UniqueIdentifier>{a6aaaa53-6591-4f49-ac77-29c2cb4000e1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Alignments\AlignRight">
-      <UniqueIdentifier>{dc1df664-d3d3-49d0-bb81-b32be3737359}</UniqueIdentifier>
+    <Filter Include="Services\ImageLoader\BMP_ImageLoader">
+      <UniqueIdentifier>{15d45c2a-ab79-4dbb-b7b1-37d769c5e4eb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Interfaces\ImageLoader">
-      <UniqueIdentifier>{0ec00950-056b-4858-bd5f-b71028255328}</UniqueIdentifier>
+    <Filter Include="Services\ImageLoader\JPG_ImageLoader">
+      <UniqueIdentifier>{cd85c2f3-230e-4b62-9920-d40eb3f40948}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes\Interfaces\ImageLoader\BMP_ImageLoader">
-      <UniqueIdentifier>{32e2d5ea-0162-4c78-a8bc-3ce72fb63311}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Classes\Interfaces\ImageLoader\JPG_ImageLoader">
-      <UniqueIdentifier>{4221837b-d5f6-4cd1-9d25-f2f7d0496686}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Classes\Interfaces\ImageLoader\ImageLoaderFactory">
-      <UniqueIdentifier>{fee4fc60-9bbe-4b27-8c9c-881d46eb46ea}</UniqueIdentifier>
+    <Filter Include="Models\Visitor">
+      <UniqueIdentifier>{ccd4b7b5-299c-410d-88e2-a1bdffee12aa}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -79,108 +71,114 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Author.cpp">
-      <Filter>Classes\Author</Filter>
+      <Filter>Models\Author</Filter>
     </ClCompile>
     <ClCompile Include="Book.cpp">
-      <Filter>Classes\Book</Filter>
+      <Filter>Models\Book</Filter>
     </ClCompile>
     <ClCompile Include="Element.cpp">
-      <Filter>Classes\Interfaces\Element</Filter>
+      <Filter>Models\Element</Filter>
     </ClCompile>
     <ClCompile Include="Image.cpp">
-      <Filter>Classes\Book\Image</Filter>
-    </ClCompile>
-    <ClCompile Include="Paragraph.cpp">
-      <Filter>Classes\Book\Paragraph</Filter>
-    </ClCompile>
-    <ClCompile Include="Table.cpp">
-      <Filter>Classes\Book\Table</Filter>
-    </ClCompile>
-    <ClCompile Include="TableOfContents.cpp">
-      <Filter>Classes\Book\TableOfContents</Filter>
-    </ClCompile>
-    <ClCompile Include="Section.cpp">
-      <Filter>Classes\Book\Section</Filter>
+      <Filter>Models\Image</Filter>
     </ClCompile>
     <ClCompile Include="ImageProxy.cpp">
-      <Filter>Classes\Book\ImageProxy</Filter>
+      <Filter>Models\ImageProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="Paragraph.cpp">
+      <Filter>Models\Paragraph</Filter>
     </ClCompile>
     <ClCompile Include="Picture.cpp">
-      <Filter>Classes\Book\Picture</Filter>
+      <Filter>Models\Picture</Filter>
     </ClCompile>
-    <ClCompile Include="AlignStrategy.cpp">
-      <Filter>Classes\Interfaces\AlignStrategy</Filter>
+    <ClCompile Include="Section.cpp">
+      <Filter>Models\Section</Filter>
+    </ClCompile>
+    <ClCompile Include="Table.cpp">
+      <Filter>Models\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="TableOfContents.cpp">
+      <Filter>Models\TableOfContents</Filter>
     </ClCompile>
     <ClCompile Include="AlignLeft.cpp">
-      <Filter>Classes\Alignments\AlignLeft</Filter>
+      <Filter>Services\AlignLeft</Filter>
     </ClCompile>
     <ClCompile Include="AlignRight.cpp">
-      <Filter>Classes\Alignments\AlignRight</Filter>
+      <Filter>Services\AlignRight</Filter>
+    </ClCompile>
+    <ClCompile Include="AlignStrategy.cpp">
+      <Filter>Services\AlignStrategy</Filter>
     </ClCompile>
     <ClCompile Include="ImageLoader.cpp">
-      <Filter>Classes\Interfaces\ImageLoader</Filter>
-    </ClCompile>
-    <ClCompile Include="BMP_ImageLoader.cpp">
-      <Filter>Classes\Interfaces\ImageLoader\BMP_ImageLoader</Filter>
-    </ClCompile>
-    <ClCompile Include="JPG_ImageLoader.cpp">
-      <Filter>Classes\Interfaces\ImageLoader\JPG_ImageLoader</Filter>
+      <Filter>Services\ImageLoader</Filter>
     </ClCompile>
     <ClCompile Include="ImageLoaderFactory.cpp">
-      <Filter>Classes\Interfaces\ImageLoader\ImageLoaderFactory</Filter>
+      <Filter>Services\ImageLoader\ImageLoaderFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="BMP_ImageLoader.cpp">
+      <Filter>Services\ImageLoader\BMP_ImageLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="JPG_ImageLoader.cpp">
+      <Filter>Services\ImageLoader\JPG_ImageLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Visitor.cpp">
+      <Filter>Models\Visitor</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Author.hpp">
-      <Filter>Classes\Author</Filter>
+      <Filter>Models\Author</Filter>
     </ClInclude>
     <ClInclude Include="Book.hpp">
-      <Filter>Classes\Book</Filter>
+      <Filter>Models\Book</Filter>
     </ClInclude>
     <ClInclude Include="Element.hpp">
-      <Filter>Classes\Interfaces\Element</Filter>
+      <Filter>Models\Element</Filter>
     </ClInclude>
     <ClInclude Include="Image.hpp">
-      <Filter>Classes\Book\Image</Filter>
-    </ClInclude>
-    <ClInclude Include="Paragraph.hpp">
-      <Filter>Classes\Book\Paragraph</Filter>
-    </ClInclude>
-    <ClInclude Include="Table.hpp">
-      <Filter>Classes\Book\Table</Filter>
-    </ClInclude>
-    <ClInclude Include="TableOfContents.hpp">
-      <Filter>Classes\Book\TableOfContents</Filter>
-    </ClInclude>
-    <ClInclude Include="Section.hpp">
-      <Filter>Classes\Book\Section</Filter>
+      <Filter>Models\Image</Filter>
     </ClInclude>
     <ClInclude Include="ImageProxy.hpp">
-      <Filter>Classes\Book\ImageProxy</Filter>
+      <Filter>Models\ImageProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="Paragraph.hpp">
+      <Filter>Models\Paragraph</Filter>
     </ClInclude>
     <ClInclude Include="Picture.hpp">
-      <Filter>Classes\Book\Picture</Filter>
+      <Filter>Models\Picture</Filter>
     </ClInclude>
-    <ClInclude Include="AlignStrategy.hpp">
-      <Filter>Classes\Interfaces\AlignStrategy</Filter>
+    <ClInclude Include="Section.hpp">
+      <Filter>Models\Section</Filter>
+    </ClInclude>
+    <ClInclude Include="Table.hpp">
+      <Filter>Models\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="TableOfContents.hpp">
+      <Filter>Models\TableOfContents</Filter>
     </ClInclude>
     <ClInclude Include="AlignLeft.hpp">
-      <Filter>Classes\Alignments\AlignLeft</Filter>
+      <Filter>Services\AlignLeft</Filter>
     </ClInclude>
     <ClInclude Include="AlignRight.hpp">
-      <Filter>Classes\Alignments\AlignRight</Filter>
+      <Filter>Services\AlignRight</Filter>
+    </ClInclude>
+    <ClInclude Include="AlignStrategy.hpp">
+      <Filter>Services\AlignStrategy</Filter>
     </ClInclude>
     <ClInclude Include="ImageLoader.hpp">
-      <Filter>Classes\Interfaces\ImageLoader</Filter>
-    </ClInclude>
-    <ClInclude Include="BMP_ImageLoader.hpp">
-      <Filter>Classes\Interfaces\ImageLoader\BMP_ImageLoader</Filter>
-    </ClInclude>
-    <ClInclude Include="JPG_ImageLoader.hpp">
-      <Filter>Classes\Interfaces\ImageLoader\JPG_ImageLoader</Filter>
+      <Filter>Services\ImageLoader</Filter>
     </ClInclude>
     <ClInclude Include="ImageLoaderFactory.hpp">
-      <Filter>Classes\Interfaces\ImageLoader\ImageLoaderFactory</Filter>
+      <Filter>Services\ImageLoader\ImageLoaderFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="BMP_ImageLoader.hpp">
+      <Filter>Services\ImageLoader\BMP_ImageLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="JPG_ImageLoader.hpp">
+      <Filter>Services\ImageLoader\JPG_ImageLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="Visitor.hpp">
+      <Filter>Models\Visitor</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
