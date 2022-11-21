@@ -1,4 +1,10 @@
-x64/
-Release/
-Debug/
-.vs/
+old/x64/
+old/Release/
+old/Debug/
+old/.vs/
+
+# Project exclude paths
+/out/
+/.idea/
+/*.iml
+/.gitignore
