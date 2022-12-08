@@ -10,7 +10,7 @@
     Realizati o operatie de calculare a salarului platit pentru fiecare categorie de angajati, precum si totalul tuturor angajatilor.
 
  */
-
+package test_sp;
 public class Main {
     public static void main(String[] args) {
         Firma nokia = new Firma("Nokia");

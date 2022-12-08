@@ -1,9 +1,6 @@
-package models;
+package main_project.models;
 
-import interfaces.Element;
-
-import java.util.ArrayList;
-import java.util.List;
+import main_project.models.interfaces.Element;
 
 public class Book extends Section {
     private Author autor;

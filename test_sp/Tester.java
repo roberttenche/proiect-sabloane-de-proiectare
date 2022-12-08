@@ -1,3 +1,4 @@
+package test_sp;
 public class Tester extends Angajat{
     public Tester(String nume, Integer salar) {
         super(nume, salar);

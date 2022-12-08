@@ -1,3 +1,4 @@
+package test_sp;
 public class Programator extends Angajat {
     public Programator(String nume, Integer salar) {
         super(nume,salar);

@@ -1,9 +1,9 @@
-package models;
-
-import interfaces.Element;
+package main_project.models;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import main_project.models.interfaces.Element;
 
 public class Section implements Element {
 

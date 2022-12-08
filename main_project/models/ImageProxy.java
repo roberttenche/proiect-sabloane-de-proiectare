@@ -1,7 +1,7 @@
-package models;
+package main_project.models;
 
-import interfaces.Element;
-import interfaces.Picture;
+import main_project.models.interfaces.Element;
+import main_project.models.interfaces.Picture;
 
 public class ImageProxy implements Picture, Element {
     @Override

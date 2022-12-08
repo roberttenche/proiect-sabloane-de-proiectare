@@ -1,3 +1,4 @@
+package test_sp;
 public class ConcreteVisitor implements Visitor{
 
     Integer salariuManageri = 0;

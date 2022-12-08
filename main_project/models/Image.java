@@ -1,7 +1,6 @@
-package models;
+package main_project.models;
 
-import interfaces.Element;
-import interfaces.Picture;
+import main_project.models.interfaces.Picture;
 
 import java.util.concurrent.TimeUnit;
 

@@ -1,3 +1,4 @@
+package test_sp;
 public class Manager extends Angajat implements Entity{
     public Manager(String nume, Integer salar) {
         super(nume, salar);

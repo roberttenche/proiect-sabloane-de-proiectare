@@ -1,4 +1,4 @@
-package interfaces;
+package main_project.models.interfaces;
 
 public interface Picture {
 

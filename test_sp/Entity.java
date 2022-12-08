@@ -1,3 +1,4 @@
+package test_sp;
 public interface Entity {
     void print();
 

@@ -1,6 +1,6 @@
-package models;
+package main_project.models;
 
-import interfaces.Element;
+import main_project.models.interfaces.Element;
 
 public class Paragraph implements Element {
     private final String text;

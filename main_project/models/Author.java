@@ -1,4 +1,4 @@
-package models;
+package main_project.models;
 
 public class Author {
     private String name;

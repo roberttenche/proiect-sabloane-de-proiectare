@@ -1,3 +1,4 @@
+package test_sp;
 public interface Visitor {
     void visitDepartament(Departament d);
     void visitFirma(Firma f);

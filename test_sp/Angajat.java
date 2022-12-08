@@ -1,4 +1,5 @@
 /// Composite: Manager, Programator, Tester
+package test_sp;
 public class Angajat implements Entity{
     protected final String nume;
 
